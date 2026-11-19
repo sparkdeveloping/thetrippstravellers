@@ -1,0 +1,30 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> thetrippstravellers@1.2.0 build
+> npm run check && next build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> thetrippstravellers@1.2.0 check
+> node scripts/verify.mjs
+
+Next.js source verification passed: 76 unique JSX IDs; 8 approved-media hashes; 18 local assets / 1,765,872 bytes; valid anchors, ARIA references and module syntax.
+▲ Next.js 16.4.6 (Turbopack)
+✓ Running next.config.mjs took 33ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 507ms
+  Running TypeScript ...
+  Finished TypeScript in 3ms ...
+  Collecting page data using 4 workers ...
+  Generating static pages using 4 workers (0/3) ...
+✓ Generating static pages using 4 workers (3/3) in 729ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+└ ○ /_not-found
+
+
+○  (Static)  prerendered as static content
+

@@ -1,0 +1,7 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> thetrippstravellers@1.2.0 test:production
+> node tests/production.mjs
+
+33 production Next.js HTTP, SSR, asset and bundle checks passed.
+Browser interaction, hydration and physical-device performance are separate checks.

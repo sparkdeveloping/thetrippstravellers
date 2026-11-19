@@ -1,0 +1,30 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> thetrippstravellers@1.2.0 test
+> node --test tests/*.test.mjs
+
+✔ a four-part individual plan is exactly $507.50 per contribution (23.072111ms)
+✔ household estimate subtracts personal savings once (0.416684ms)
+✔ cent rounding always sums to the exact remaining estimate (0.390075ms)
+✔ fully set aside has no negative or fictitious payment (0.15301ms)
+✔ bad planner input is rejected rather than showing misleading results (0.734248ms)
+✔ planned departure weekdays match the supplied dates (0.27446ms)
+✔ calendar holds travel departures and the roora with exclusive all-day ends (0.425983ms)
+✔ start-date draft is explicit, local text and handles invalid dates (8.453351ms)
+✔ partial clothing details keep their chosen units (0.718454ms)
+✔ invalid or empty measurements do not create a false completed draft (0.524134ms)
+✔ changing measurement units converts the value rather than relabelling it (0.330857ms)
+✔ the journey has departure, Dubai and roora chapters in that order (1.115967ms)
+✔ arrival finishes with the real photo settled and the route completed (0.171668ms)
+✔ reversing progress restores the initial composition without stored animation state (1.135394ms)
+✔ the photo grows continuously and never overshoots its physical frame (1.264485ms)
+✔ out-of-range scroll progress remains bounded with finite transforms (0.307123ms)
+✔ analytic spring responds consistently at 30, 60 and 120Hz (1.988102ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 186.623568
