@@ -75,6 +75,32 @@ try {
   );
   check(html.includes('id="travellers-app"'), "React effect boundary present");
   check(
+    html.includes('id="fitting"') &&
+      html.includes('id="fitting-scene"') &&
+      (html.match(/href="#fitting"/g) || []).length >= 4,
+    "Fitting is a dedicated chapter with navigation, hero and checklist access",
+  );
+  check(
+    ["look", "fit", "send"].every(
+      (step) =>
+        html.includes(`id="fitting-tab-${step}"`) &&
+        html.includes(`aria-controls="fitting-panel-${step}"`) &&
+        html.includes(`id="fitting-panel-${step}"`),
+    ),
+    "Fitting views have connected tabs and panels",
+  );
+  check(
+    /id="fitting-link"[^>]*href="https:\/\/outfitsroora.netlify.app\/"[^>]*target="_blank"/.test(
+      html,
+    ),
+    "Direct fitting link is server-rendered independently of interactive views",
+  );
+  check(
+    !html.includes('id="roora-attire"') &&
+      !html.includes('class="measure-art"'),
+    "Superseded fitting sketch and stacked gallery are removed",
+  );
+  check(
     html.includes('role="tablist"') && html.includes("wallet-roora"),
     "Journey and date-wallet controls present",
   );

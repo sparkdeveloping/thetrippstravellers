@@ -1017,68 +1017,7 @@ textarea {
 .layover-note .eyebrow {
   color: var(--muted);
 }
-.measurements {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 60px;
-  align-items: center;
-  padding-top: 90px;
-}
-.measurements h3 {
-  font-family: Barlow, Arial, sans-serif;
-  font-size: clamp(3rem, 5vw, 5rem);
-  line-height: 1;
-  margin: 18px 0 24px;
-}
-.measurements p {
-  max-width: 440px;
-}
-.measurements .button {
-  margin: 25px 0 10px;
-}
-.measurements .small {
-  font-size: 0.75rem;
-}
-.measure-art {
-  background: #eadfd4;
-  position: relative;
-  min-height: 430px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.measure-art svg {
-  max-width: 410px;
-  width: 88%;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.garment {
-  fill: #cdd5cd;
-  stroke: #4b625a;
-  stroke-width: 1.5;
-}
-.garment-seam {
-  stroke: #4b625a;
-  stroke-dasharray: 3 4;
-}
-.tape {
-  stroke: #ba582e;
-  stroke-width: 19;
-  fill: none;
-}
-.tape-marks {
-  stroke: #fee0ae;
-  stroke-width: 1.5;
-}
-.measure-art > span {
-  font-size: 0.625rem;
-  letter-spacing: 0.12em;
-  position: absolute;
-  bottom: 24px;
-}
+
 .notes {
   display: grid;
   grid-template-columns: 1fr 1.15fr;
@@ -1408,12 +1347,7 @@ body:has(dialog[open]) {
     left: 25px;
     bottom: 25px;
   }
-  .measurements {
-    gap: 35px;
-  }
-  .measure-art {
-    min-height: 380px;
-  }
+
   .notes {
     gap: 60px;
   }
@@ -1705,20 +1639,7 @@ body:has(dialog[open]) {
   .layover-note p {
     font-size: 0.9375rem;
   }
-  .measurements {
-    grid-template-columns: 1fr;
-    gap: 35px;
-    padding-top: 60px;
-  }
-  .measurements h3 {
-    font-size: 3.6rem;
-  }
-  .measurements p {
-    max-width: none;
-  }
-  .measure-art {
-    min-height: 350px;
-  }
+
   .notes {
     grid-template-columns: 1fr;
     gap: 35px;
@@ -1885,7 +1806,6 @@ html[data-motion="off"] *:after {
   .mobile-menu,
   footer,
   .route-drawing,
-  .measure-art,
   .luggage-scene,
   .toast,
   dialog {
@@ -1907,7 +1827,6 @@ html[data-motion="off"] *:after {
   .budget-grid,
   .transfer-layout,
   .baggage-layout,
-  .measurements,
   .notes {
     grid-template-columns: 1fr;
     gap: 25px;
@@ -1978,8 +1897,7 @@ html[data-motion="off"] *:after {
   .provider-links span {
     font-size: 0.75rem;
   }
-  .notes-intro .text-button,
-  .measurements .small {
+  .notes-intro .text-button {
     font-size: 0.875rem;
   }
   .fare-includes span {

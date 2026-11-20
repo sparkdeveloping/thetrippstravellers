@@ -1,5 +1,6 @@
 import "./globals.css";
 import "./experience.css";
+import "./fitting.css";
 export const metadata = {
   title: "The Tripps Travellers — The Journey to Their Roora",
   description:

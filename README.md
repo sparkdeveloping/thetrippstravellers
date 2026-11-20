@@ -26,25 +26,28 @@ npm start
 
 ## Project structure
 
-| Path | Responsibility |
-| --- | --- |
-| `app/layout.jsx` | Metadata, local font preload and shared styles |
-| `app/page.jsx` | Server-rendered guest journey |
-| `app/components/` | Native JSX chapters, header, footer and dialogs |
-| `app/Experience.jsx` | React client lifecycle boundary |
-| `lib/experience.mjs` | Scoped form, gallery, wallet, checklist and download interactions |
-| `lib/links.mjs` | Family-approved invitation and attire-form destinations |
-| `lib/motion.mjs` | Coordinated scroll/route/photographic motion and interruption handling |
-| `lib/logic.mjs` | Integer-cent planning, dates and ICS content |
-| `public/assets/` | All used photographs, original attire boards, outfit crops, fonts, artwork and geographic map |
-| `tests/` | Logic/motion tests and real production-server checks |
-| `docs/` | Research, asset provenance and conversion validation notes |
+| Path                                                               | Responsibility                                                                                |
+| ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
+| `app/layout.jsx`                                                   | Metadata, local font preload and shared styles                                                |
+| `app/page.jsx`                                                     | Server-rendered guest journey                                                                 |
+| `app/components/`                                                  | Native JSX chapters, header, footer and dialogs                                               |
+| `app/Experience.jsx`                                               | React client lifecycle boundary                                                               |
+| `lib/experience.mjs`                                               | Scoped form, gallery, wallet, checklist and download interactions                             |
+| `lib/links.mjs`                                                    | Family-approved invitation and attire-form destinations                                       |
+| `app/components/Fitting.jsx`, `app/fitting.css`, `lib/fitting.mjs` | Travel wardrobe, fitting guidance and keyboard-accessible view controller                     |
+| `lib/motion.mjs`                                                   | Coordinated scroll/route/photographic motion and interruption handling                        |
+| `lib/logic.mjs`                                                    | Integer-cent planning, dates and ICS content                                                  |
+| `public/assets/`                                                   | All used photographs, original attire boards, outfit crops, fonts, artwork and geographic map |
+| `tests/`                                                           | Logic/motion tests and real production-server checks                                          |
+| `docs/`                                                            | Research, asset provenance and conversion validation notes                                    |
 
 The application is rendered as native React/Next.js components. It does not embed the hosted site or an HTML iframe. React owns initialization and cleanup; effect cleanup aborts listeners, disconnects observers, cancels frames/timers and revokes download URLs. Server-rendered forms remain inert until their client handlers are registered.
 
 ## Content and personal planning
 
 Roora: **Wednesday, December 1, 2027**, Zimbabwe. Planned travel: **November 26–December 6, 2027**. Ceremony time and exact private address remain pending. The original photographs illustrate the relationship; they are not presented as photographs of the future ceremony. Both original attire boards retain their supplied colors.
+
+The fitting is a dedicated chapter at `#fitting`, accessible from the header, hero and checklist. The wardrobe shares the existing motion controller and offers three views: looks, measuring guidance and the tailor handoff. Full reference boards and a direct link to the family's existing form remain available. See `docs/FITTING-JOURNEY.md` for the design, motion and verification record.
 
 Only checklist ticks and motion preference persist in the visitor’s browser. Names, payment-start drafts and planning amounts are not uploaded by this guide. This project has no payment processor, official balance ledger, RSVP database or organizer inbox. Payment messages must be sent privately by the guest. Clothing selections and measurements are completed on the family’s existing external Roora Collection form at https://outfitsroora.netlify.app/. The invitation links to https://thetrippsroora.netlify.app/. These destinations are shared between the page and downloaded notes in `lib/links.mjs`. The recipient’s national ID is excluded.
 
@@ -59,4 +62,5 @@ The hosted preview’s ChatGPT sign-in gate belongs to its hosting platform. **T
 Click **Watch the journey**, scroll in either direction, or use the Departure/Dubai/Their roora controls. Playback can be paused or interrupted. The OS reduced-motion preference and guest control are respected. Short views and enlarged text receive complete linear layouts. The original website and the completed Letter Home project are independent of this download.
 
 See `docs/VALIDATION.md` for the checks performed for this conversion and its limits, and `docs/RESEARCH-MOTION.md` for the design and motion rationale.
+
 # thetrippstravellers

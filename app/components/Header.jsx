@@ -25,6 +25,7 @@ export default function Header() {
           <a href="#journey">The journey</a>
           <a href="#pace">Your pace</a>
           <a href="#prepare">Get ready</a>
+          <a href="#fitting">Your fitting</a>
         </nav>
         <button
           className="motion-control header-motion"
@@ -49,6 +50,7 @@ export default function Header() {
             <a href="#journey">The journey</a>
             <a href="#pace">Your pace</a>
             <a href="#prepare">Get ready</a>
+            <a href="#fitting">Your fitting</a>
             <a href="#notes">My trip notes</a>
             <button
               className="motion-control"
