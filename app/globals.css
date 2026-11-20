@@ -1338,11 +1338,6 @@ dialog > .small {
   font-size: 0.75rem;
   margin-top: 20px;
 }
-.measure-fields {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-}
 .source-links {
   padding-left: 20px;
   font-size: 0.875rem;
@@ -1802,9 +1797,6 @@ body:has(dialog[open]) {
   .dialog-close {
     margin: -18px -10px 20px auto;
   }
-  .measure-fields {
-    gap: 15px;
-  }
   .toast {
     bottom: max(14px, env(safe-area-inset-bottom));
     font-size: 0.8125rem;
@@ -1863,9 +1855,6 @@ body:has(dialog[open]) {
   }
   .closing h2 {
     font-size: 3.3rem;
-  }
-  .measure-fields {
-    grid-template-columns: 1fr;
   }
 }
 @media (prefers-reduced-motion: reduce) {

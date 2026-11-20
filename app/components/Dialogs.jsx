@@ -1,3 +1,5 @@
+import { INVITATION_URL, MEASUREMENTS_URL } from "../../lib/links.mjs";
+
 export default function Dialogs() {
   return (
     <>
@@ -55,114 +57,6 @@ export default function Dialogs() {
           payment schedule.
         </p>
       </dialog>
-      <dialog id="measure-dialog" aria-labelledby="measure-title">
-        <button
-          className="dialog-close"
-          type="button"
-          data-close
-          aria-label="Close measurement message"
-        >
-          Close
-        </button>
-        <p className="eyebrow">GETTING THE FIT RIGHT</p>
-        <h2 id="measure-title">Made for you.</h2>
-        <p>
-          Add the measurements you have. Check the tailor’s requirements before
-          sending.
-        </p>
-        <form id="measure-form" inert aria-busy="true">
-          <label htmlFor="measure-unit">
-            Measurement unit
-            <select id="measure-unit">
-              <option value="cm">Centimetres (cm)</option>
-              <option value="in">Inches (in)</option>
-            </select>
-          </label>
-          <div className="measure-fields">
-            <label htmlFor="chest">
-              Bust / chest
-              <input
-                id="chest"
-                name="chest"
-                type="number"
-                min="0.1"
-                max="300"
-                step="0.1"
-                inputMode="decimal"
-              />
-            </label>
-            <label htmlFor="waist">
-              Waist
-              <input
-                id="waist"
-                name="waist"
-                type="number"
-                min="0.1"
-                max="300"
-                step="0.1"
-                inputMode="decimal"
-              />
-            </label>
-            <label htmlFor="hips">
-              Hips
-              <input
-                id="hips"
-                name="hips"
-                type="number"
-                min="0.1"
-                max="300"
-                step="0.1"
-                inputMode="decimal"
-              />
-            </label>
-            <label htmlFor="shoulder">
-              Shoulder width
-              <input
-                id="shoulder"
-                name="shoulder"
-                type="number"
-                min="0.1"
-                max="300"
-                step="0.1"
-                inputMode="decimal"
-              />
-            </label>
-            <label htmlFor="inseam">
-              Inseam
-              <input
-                id="inseam"
-                name="inseam"
-                type="number"
-                min="0.1"
-                max="300"
-                step="0.1"
-                inputMode="decimal"
-              />
-            </label>
-          </div>
-          <p className="error" id="measure-error" role="alert" hidden></p>
-          <button className="button ink" type="submit">
-            Prepare measurement message
-          </button>
-        </form>
-        <div id="measure-result" hidden>
-          <label htmlFor="measure-message">
-            Your message
-            <textarea id="measure-message" rows="7" readOnly></textarea>
-          </label>
-          <button
-            className="button coral"
-            type="button"
-            data-copy="measure-message"
-          >
-            Copy message
-          </button>
-        </div>
-        <p className="small">
-          Measurements stay in this open page. They aren’t uploaded or stored by
-          this guide.
-        </p>
-      </dialog>
       <dialog id="sources-dialog" aria-labelledby="sources-title">
         <button
           className="dialog-close"
@@ -183,7 +77,8 @@ export default function Dialogs() {
           Personal planning tools run in your browser. This guide doesn’t take
           payments, keep an official balance, receive measurements or send
           messages. Only your six checklist ticks and motion preference are
-          saved on this device.
+          saved on this device. Clothing selections and measurements are handled
+          on Natalie and Jordan’s separate Roora Collection form.
         </p>
         <p>
           Recipient identity documents are deliberately excluded. Obtain
@@ -196,6 +91,19 @@ export default function Dialogs() {
           illustrate their life together, not the future ceremony. The map uses
           Natural Earth geography and an illustrative route.
         </p>
+        <h3>From Natalie &amp; Jordan</h3>
+        <ul className="source-links">
+          <li>
+            <a href={INVITATION_URL} target="_blank" rel="noopener noreferrer">
+              The roora invitation
+            </a>
+          </li>
+          <li>
+            <a href={MEASUREMENTS_URL} target="_blank" rel="noopener noreferrer">
+              Attire &amp; measurements form
+            </a>
+          </li>
+        </ul>
         <h3>Official guidance</h3>
         <ul className="source-links">
           <li>

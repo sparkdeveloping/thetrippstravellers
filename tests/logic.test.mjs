@@ -4,8 +4,6 @@ import {
   planBudget,
   money,
   planMessage,
-  measurementMessage,
-  convertMeasurement,
   calendarFile,
   DATES,
 } from "../lib/logic.mjs";
@@ -79,31 +77,4 @@ test("start-date draft is explicit, local text and handles invalid dates", () =>
   assert.match(text, /screenshot or confirmation/);
   assert.throws(() => planMessage("", "2027-02-30"));
   assert.throws(() => planMessage("", ""));
-});
-test("partial clothing details keep their chosen units", () => {
-  const s = measurementMessage(
-    { chest: "96", waist: "80.5", hips: "", shoulder: "", inseam: "" },
-    "cm",
-  );
-  assert.match(s, /Bust\/chest: 96 cm/);
-  assert.match(s, /Waist: 80.5 cm/);
-  assert.doesNotMatch(s, /Hips:/);
-  assert.match(s, /tailor needs any other measurements/);
-});
-test("invalid or empty measurements do not create a false completed draft", () => {
-  for (const args of [
-    [{}, "cm"],
-    [{ waist: "0" }, "cm"],
-    [{ waist: "301" }, "cm"],
-    [{ waist: "121" }, "in"],
-    [{ waist: "NaN" }, "cm"],
-    [{ waist: 80 }, "ft"],
-  ])
-    assert.throws(() => measurementMessage(...args));
-});
-test("changing measurement units converts the value rather than relabelling it", () => {
-  assert.equal(convertMeasurement("101.6", "cm", "in"), "40");
-  assert.equal(convertMeasurement("40", "in", "cm"), "101.6");
-  assert.equal(convertMeasurement("", "cm", "in"), "");
-  assert.throws(() => convertMeasurement("bad", "cm", "in"));
 });
