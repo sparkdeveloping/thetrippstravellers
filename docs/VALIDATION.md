@@ -1,5 +1,9 @@
 # Next.js download validation
 
+The November 20, 2026 link correction is documented in `LINK-CORRECTION.md`.
+The results below describe the original conversion; that correction removes the
+local measurements draft in favour of the family's existing fitting form.
+
 This export converts the latest Tripps Travellers roora edition into a standalone Next.js App Router application. The hosted Site and the completed Letter Home project were not modified by this export.
 
 ## Verified for this package

@@ -1,3 +1,5 @@
+import { INVITATION_URL } from "../../lib/links.mjs";
+
 export default function Celebration() {
   return (
     <section
@@ -41,7 +43,7 @@ export default function Celebration() {
         </p>
         <a
           className="underlink"
-          href="https://thetrippsroora.vercel.app/"
+          href={INVITATION_URL}
           target="_blank"
           rel="noopener noreferrer"
         >

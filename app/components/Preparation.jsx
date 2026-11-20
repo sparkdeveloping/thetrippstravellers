@@ -1,3 +1,5 @@
+import { MEASUREMENTS_URL } from "../../lib/links.mjs";
+
 export default function Preparation() {
   return (
     <section
@@ -216,19 +218,21 @@ export default function Preparation() {
             their roora.
           </h3>
           <p>
-            Please send clothing measurements to the organizer as soon as
-            possible so arrangements for the celebration can begin. Confirm with
-            the tailor which measurements and fit details they need.
+            Natalie and Jordan have a fitting form ready for you. Choose your
+            look and share your measurements as soon as possible so clothing
+            arrangements for their celebration can begin.
           </p>
-          <button
+          <a
             className="button outline"
-            type="button"
-            data-open="measure-dialog"
+            href={MEASUREMENTS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Prepare my measurements
-          </button>
+            Attire &amp; measurements
+          </a>
           <p className="small">
-            Make a private message to copy. Nothing is sent automatically.
+            Opens their Roora Collection in a new tab. Follow the measurement
+            guidance for your chosen look.
           </p>
         </div>
         <div className="measure-art" aria-hidden="true">

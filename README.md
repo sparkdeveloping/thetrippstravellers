@@ -33,8 +33,9 @@ npm start
 | `app/components/` | Native JSX chapters, header, footer and dialogs |
 | `app/Experience.jsx` | React client lifecycle boundary |
 | `lib/experience.mjs` | Scoped form, gallery, wallet, checklist and download interactions |
+| `lib/links.mjs` | Family-approved invitation and attire-form destinations |
 | `lib/motion.mjs` | Coordinated scroll/route/photographic motion and interruption handling |
-| `lib/logic.mjs` | Integer-cent planning, dates, measurement conversion and ICS content |
+| `lib/logic.mjs` | Integer-cent planning, dates and ICS content |
 | `public/assets/` | All used photographs, original attire boards, outfit crops, fonts, artwork and geographic map |
 | `tests/` | Logic/motion tests and real production-server checks |
 | `docs/` | Research, asset provenance and conversion validation notes |
@@ -45,7 +46,7 @@ The application is rendered as native React/Next.js components. It does not embe
 
 Roora: **Wednesday, December 1, 2027**, Zimbabwe. Planned travel: **November 26–December 6, 2027**. Ceremony time and exact private address remain pending. The original photographs illustrate the relationship; they are not presented as photographs of the future ceremony. Both original attire boards retain their supplied colors.
 
-Only checklist ticks and motion preference persist in the visitor’s browser. Names, measurement drafts, payment-start drafts and planning amounts are not uploaded. This project has no payment processor, official balance ledger, RSVP database or organizer inbox. Payment and measurement messages must be sent privately by the guest. The recipient’s national ID is excluded.
+Only checklist ticks and motion preference persist in the visitor’s browser. Names, payment-start drafts and planning amounts are not uploaded by this guide. This project has no payment processor, official balance ledger, RSVP database or organizer inbox. Payment messages must be sent privately by the guest. Clothing selections and measurements are completed on the family’s existing external Roora Collection form at https://outfitsroora.netlify.app/. The invitation links to https://thetrippsroora.netlify.app/. These destinations are shared between the page and downloaded notes in `lib/links.mjs`. The recipient’s national ID is excluded.
 
 ## Hosting
 

@@ -53,7 +53,7 @@ export default function Checklist() {
           <span>
             <strong>Send clothing measurements</strong>
             <small>
-              Get the tailor’s requirements and share them privately.
+              Choose your look and complete the Roora Collection form.
             </small>
           </span>
         </label>

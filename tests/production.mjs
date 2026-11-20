@@ -63,8 +63,15 @@ try {
     "Application is rendered in Next.js, not a static iframe",
   );
   check(
-    (html.match(/<form\b[^>]*\binert(?:="[^"]*")?[^>]*>/g) || []).length === 3,
+    (html.match(/<form\b[^>]*\binert(?:="[^"]*")?[^>]*>/g) || []).length === 2,
     "All forms wait for client handlers",
+  );
+  check(
+    html.includes('href="https://thetrippsroora.netlify.app/"') &&
+      html.includes('href="https://outfitsroora.netlify.app/"') &&
+      !html.includes("thetrippsroora.vercel.app") &&
+      !html.includes('id="measure-dialog"'),
+    "Family invitation and existing measurements form replace obsolete destinations",
   );
   check(html.includes('id="travellers-app"'), "React effect boundary present");
   check(
