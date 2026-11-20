@@ -820,93 +820,7 @@ html[data-cinema="on"] .film-scroll-hint {
 .wallet-location p {
   font-size: 0.8125rem;
 }
-.roora-attire {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 70px;
-  align-items: center;
-  padding-top: 80px;
-  margin-top: 75px;
-  border-top: 1px solid var(--line);
-}
-.attire-intro > h3 {
-  font-family: Barlow, Arial, sans-serif;
-  font-size: clamp(3rem, 4.5vw, 5rem);
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  margin: 20px 0 25px;
-  color: #344839;
-}
-.attire-intro > p {
-  max-width: 470px;
-}
-.attire-colours {
-  display: grid;
-  gap: 12px;
-  margin: 26px 0;
-}
-.attire-colours > span {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
-.attire-colours i {
-  width: 19px;
-  height: 19px;
-  border: 1px solid #798773;
-  border-radius: 50%;
-  background: var(--cloth);
-  display: block;
-  flex: none;
-}
-.attire-buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 25px;
-  flex-wrap: wrap;
-}
-.attire-buttons .button {
-  font-size: 0.8125rem;
-  padding: 12px 15px;
-}
-.packed-looks {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  align-items: start;
-}
-.packed-looks figure {
-  margin: 0;
-  padding: 8px 8px 12px;
-  background: white;
-  box-shadow: 0 8px 18px #20322712;
-  transform: translateY(calc((1 - var(--pack, 1)) * var(--lift, 50px)))
-    rotate(var(--look-rotate, -2deg));
-}
-.packed-looks figure:nth-child(even) {
-  --look-rotate: 2deg;
-  --lift: 90px;
-  margin-top: 30px;
-}
-.packed-looks figure:nth-child(3) {
-  --look-rotate: 1deg;
-  --lift: 70px;
-}
-.packed-looks img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 0.75;
-  object-fit: contain;
-  background: #e4e7dc;
-}
-.packed-looks figcaption {
-  font-size: 0.75rem;
-  line-height: 1.5;
-  margin: 10px 5px 0;
-}
+
 .case-large {
   transform: translate3d(
       calc((1 - var(--bags, 1)) * -90px),
@@ -929,10 +843,7 @@ html[data-cinema="on"] .film-scroll-hint {
   transform: rotate(calc(-6deg + (1 - var(--bags, 1)) * 18deg))
     translateY(calc((1 - var(--bags, 1)) * 35px));
 }
-.tape {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: calc((1 - var(--tape, 1)) * 1000);
-}
+
 .pace-track i {
   transform-origin: left;
 }
@@ -1040,12 +951,7 @@ html[data-cinema="on"] .film-scroll-hint {
   .wallet-back strong {
     font-size: 2.35rem;
   }
-  .roora-attire {
-    gap: 40px;
-  }
-  .packed-looks {
-    gap: 13px;
-  }
+
   .case-large {
     --bag-scale: 0.86;
   }
@@ -1463,34 +1369,7 @@ html[data-cinema="on"] .film-scroll-hint {
     font-size: 0.9375rem;
     margin: 7px 0;
   }
-  .roora-attire {
-    grid-template-columns: 1fr;
-    gap: 35px;
-    margin-top: 50px;
-    padding-top: 55px;
-  }
-  .attire-intro > h3 {
-    font-size: 3.7rem;
-  }
-  .attire-buttons {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .attire-buttons .button {
-    font-size: 0.8125rem;
-  }
-  .attire-colours > span {
-    font-size: 0.8125rem;
-  }
-  .packed-looks {
-    gap: 14px;
-  }
-  .packed-looks figure:nth-child(even) {
-    margin-top: 22px;
-  }
-  .packed-looks figcaption {
-    font-size: 0.75rem;
-  }
+
   .case-large {
     --bag-scale: 0.83;
   }
@@ -1702,18 +1581,7 @@ html[data-motion="off"] .wallet-face:not([aria-hidden="true"]) {
   .arrival-wallet {
     display: none;
   }
-  .roora-attire {
-    display: block;
-    margin-top: 20px;
-    padding-top: 20px;
-  }
-  .packed-looks {
-    max-width: 400px;
-    margin-top: 25px;
-  }
-  .packed-looks figure {
-    transform: none !important;
-  }
+
   .header-motion {
     display: none;
   }
@@ -1812,9 +1680,6 @@ html[data-large-type="true"] .route-stops button {
   border: 0;
   border-top: 1px solid var(--line);
   padding: 25px 0;
-}
-html[data-large-type="true"] .packed-looks {
-  grid-template-columns: 1fr;
 }
 
 /* Compact film staging keeps cinematic motion on shorter phones and laptop views. */

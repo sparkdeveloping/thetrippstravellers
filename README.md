@@ -34,6 +34,7 @@ npm start
 | `app/Experience.jsx` | React client lifecycle boundary |
 | `lib/experience.mjs` | Scoped form, gallery, wallet, checklist and download interactions |
 | `lib/links.mjs` | Family-approved invitation and attire-form destinations |
+| `app/components/Fitting.jsx`, `app/fitting.css`, `lib/fitting.mjs` | Travel wardrobe, fitting guidance and keyboard-accessible view controller |
 | `lib/motion.mjs` | Coordinated scroll/route/photographic motion and interruption handling |
 | `lib/logic.mjs` | Integer-cent planning, dates and ICS content |
 | `public/assets/` | All used photographs, original attire boards, outfit crops, fonts, artwork and geographic map |
@@ -45,6 +46,8 @@ The application is rendered as native React/Next.js components. It does not embe
 ## Content and personal planning
 
 Roora: **Wednesday, December 1, 2027**, Zimbabwe. Planned travel: **November 26–December 6, 2027**. Ceremony time and exact private address remain pending. The original photographs illustrate the relationship; they are not presented as photographs of the future ceremony. Both original attire boards retain their supplied colors.
+
+The fitting is a dedicated chapter at `#fitting`, accessible from the header, hero and checklist. The wardrobe shares the existing motion controller and offers three views: looks, measuring guidance and the tailor handoff. Full reference boards and a direct link to the family's existing form remain available. See `docs/FITTING-JOURNEY.md` for the design, motion and verification record.
 
 Only checklist ticks and motion preference persist in the visitor’s browser. Names, payment-start drafts and planning amounts are not uploaded by this guide. This project has no payment processor, official balance ledger, RSVP database or organizer inbox. Payment messages must be sent privately by the guest. Clothing selections and measurements are completed on the family’s existing external Roora Collection form at https://outfitsroora.netlify.app/. The invitation links to https://thetrippsroora.netlify.app/. These destinations are shared between the page and downloaded notes in `lib/links.mjs`. The recipient’s national ID is excluded.
 

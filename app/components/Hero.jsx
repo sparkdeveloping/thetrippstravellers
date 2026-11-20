@@ -39,6 +39,9 @@ export default function Hero() {
             <a href="#pace" className="hero-essentials">
               Go to travel essentials
             </a>
+            <a href="#fitting" className="hero-essentials">
+              Plan my roora outfit
+            </a>
           </div>
         </div>
         <figure className="hero-window">

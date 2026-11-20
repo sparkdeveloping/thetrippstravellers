@@ -6,6 +6,7 @@ import Celebration from "./components/Celebration.jsx";
 import Journey from "./components/Journey.jsx";
 import PaymentPlan from "./components/PaymentPlan.jsx";
 import Preparation from "./components/Preparation.jsx";
+import Fitting from "./components/Fitting.jsx";
 import Checklist from "./components/Checklist.jsx";
 import Closing from "./components/Closing.jsx";
 import Footer from "./components/Footer.jsx";
@@ -21,6 +22,7 @@ export default function Home() {
         <Journey />
         <PaymentPlan />
         <Preparation />
+        <Fitting />
         <Checklist />
         <Closing />
       </main>
