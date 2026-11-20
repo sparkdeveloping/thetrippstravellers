@@ -81,19 +81,23 @@ try {
     "Fitting is a dedicated chapter with navigation, hero and checklist access",
   );
   check(
-    ["look", "fit", "send"].every((step) =>
-      html.includes(`id="fitting-tab-${step}"`) &&
-      html.includes(`aria-controls="fitting-panel-${step}"`) &&
-      html.includes(`id="fitting-panel-${step}"`),
+    ["look", "fit", "send"].every(
+      (step) =>
+        html.includes(`id="fitting-tab-${step}"`) &&
+        html.includes(`aria-controls="fitting-panel-${step}"`) &&
+        html.includes(`id="fitting-panel-${step}"`),
     ),
     "Fitting views have connected tabs and panels",
   );
   check(
-    /id="fitting-link"[^>]*href="https:\/\/outfitsroora.netlify.app\/"[^>]*target="_blank"/.test(html),
+    /id="fitting-link"[^>]*href="https:\/\/outfitsroora.netlify.app\/"[^>]*target="_blank"/.test(
+      html,
+    ),
     "Direct fitting link is server-rendered independently of interactive views",
   );
   check(
-    !html.includes('id="roora-attire"') && !html.includes('class="measure-art"'),
+    !html.includes('id="roora-attire"') &&
+      !html.includes('class="measure-art"'),
     "Superseded fitting sketch and stacked gallery are removed",
   );
   check(

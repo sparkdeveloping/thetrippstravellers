@@ -77,7 +77,9 @@ export default function Checklist() {
           Personal notes only. This checklist doesn’t notify the organizer or
           confirm a booking.
         </p>
-        <a href="#fitting" className="underlink notes-fitting-link">Return to your fitting</a>
+        <a href="#fitting" className="underlink notes-fitting-link">
+          Return to your fitting
+        </a>
       </div>
     </section>
   );

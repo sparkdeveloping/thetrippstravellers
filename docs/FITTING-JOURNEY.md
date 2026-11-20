@@ -26,7 +26,7 @@ The existing scroll rig measures the wardrobe once per geometry refresh and
 uses its existing animation clock. The camera rises 70px, settles from 15deg
 of perspective and scales from .92 to 1 as the scene enters. The pocket shares
 that movement with its own 65px offset. Both are reversible with native scroll.
-This replaces two previous geometry measurements with one.
+Each photograph has an outer carrier that spreads from the case with scroll, while its inner frame handles view changes. This replaces two previous geometry measurements with one.
 
 Guest-driven view changes use 620ms transforms, 320ms opacity, a 720ms tape
 reveal and a 640ms tag movement with `cubic-bezier(.2,.75,.2,1)`. Changes can be
